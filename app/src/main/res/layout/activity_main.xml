@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dg2"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_margin="5dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/img3"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="#FF000000"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#130400"
+            android:fontFamily="cursive"
+            android:onClick="ChangeTrainerImage"
+            android:text="Upload Image"
+            android:textStyle="bold|italic"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Trainer Name"
+        android:layout_marginTop="60dp"
+        android:textSize="11pt"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="#130400"/>
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:bootstrapSize="md"
+        app:bootstrapBrand="info"
+        android:layout_marginTop="15dp"
+        android:inputType="date"
+        android:textColor="#130400" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#130400"
+        android:layout_gravity="center"
+        android:text="COMPLETE REGISTRATION "
+        android:onClick="continueSignupAsTrainer"
+        app:bootstrapBrand="success"
+        android:layout_marginTop="69dp"
+        android:textStyle="bold|italic"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+</LinearLayout>
